@@ -1,0 +1,57 @@
+/* Shared styles for the Bad Guys Movie Club Bot legal pages. */
+
+:root {
+  --bg: #ffffff;
+  --fg: #1f2328;
+  --muted: #59636e;
+  --rule: #d8dee4;
+  --link: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #9198a1;
+    --rule: #30363d;
+    --link: #4493f8;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 48px 16px 80px;
+}
+
+main { max-width: 42rem; margin: 0 auto; }
+
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .25rem; }
+
+h2 {
+  font-size: 1.15rem;
+  margin: 2.25rem 0 .6rem;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.updated { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+
+ul { padding-left: 1.3rem; }
+li { margin: .4rem 0; }
+
+a { color: var(--link); }
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: .875rem;
+}
+
+footer a { margin-right: 1rem; }
